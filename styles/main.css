@@ -1,0 +1,286 @@
+header {
+  background-color: rgb(0, 0, 0);
+  margin: 0%;
+  text-align: center;
+}
+
+.container1 {
+  background-color: black;
+  display: flex;
+  margin-left: 9rem;
+  margin-right: 9rem;
+  justify-content: space-between;
+}
+
+.logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.logo-img {
+  background-color: black;
+  border-style: solid;
+  border-color: white;
+  border-radius: 50%;
+  height: 65px;
+  margin: 2%;
+}
+.logo-name {
+  font-family: "Sriracha", cursive;
+  font-size: 1.55rem;
+  color: white;
+  margin-left: 2%;
+  margin-bottom: 0%;
+}
+
+.side-bar {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  align-items: center;
+  margin: 0%;
+  margin-left: 2rem;
+  padding: 0%;
+}
+.side-bar li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Inria Sans", sans-serif;
+  font-size: 1.2rem;
+  margin-left: 2rem;
+}
+
+.side-bar li a:hover {
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: rgb(255, 255, 255);
+  border-radius: 7%;
+}
+
+.side-bar .bars {
+  display: none;
+  height: 17px;
+}
+
+.dropdown {
+  display: none;
+  background-color: black;
+  text-align: center;
+  height: 0px;
+  font-family: "Inria Sans", sans-serif;
+  font-size: 1.2rem;
+}
+
+.dropdown.open {
+  height: 20%;
+
+  /* overflow: hidden;
+  transition: height 0.2s ease; */
+}
+.name {
+  display: none;
+  padding: 0%;
+}
+
+.dropdown li {
+  list-style: none;
+  padding: 1%;
+}
+.dropdown li:hover {
+  border-style: solid;
+  border-radius: 2px;
+  border-color: rgb(255, 255, 255);
+}
+.dropdown a {
+  text-decoration: none;
+  color: white;
+  /* border-style: solid;
+  border-radius: 2px;
+  border-color: rgb(255, 255, 255); */
+  width: 1vw;
+  padding-left: 40%;
+  padding-right: 40%;
+}
+
+.show {
+  display: block;
+}
+
+@media (max-width: 750px) {
+  .container1 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  .side-bar li a {
+    display: none;
+  }
+  .side-bar .bars {
+    display: block;
+  }
+  .dropdown {
+    display: block;
+  }
+  .logo-img {
+    height: 55px;
+  }
+}
+@media (max-width: 450px) {
+  .container1 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .container1 {
+    margin: 0rem;
+  }
+  .logo-img {
+    height: 50px;
+    margin-left: 2%;
+  }
+
+  .logo-name {
+    font-size: 1.3rem;
+  }
+  .side-bar .bars {
+    height: 15px;
+  }
+
+  .side-bar {
+    margin-right: 5%;
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 200px) {
+  .logo-img {
+    height: 40px;
+    margin-left: 1%;
+  }
+
+  .logo-name {
+    font-size: 1.1rem;
+  }
+}
+/* ______________Subjects____________________ */
+
+.head {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 2%;
+}
+.subjects {
+  text-align: center;
+}
+
+.subj_btn2 {
+  font-family: "Inria Sans", sans-serif;
+  font-size: 1.9rem;
+  width: 80%;
+  background-color: white;
+  border: solid black;
+  border-radius: 15px;
+  padding: 1%;
+  text-align: center;
+  margin-top: 1.5%;
+  box-shadow: 0 8px #999;
+}
+.subj_btn2:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.modules {
+  display: none;
+  text-align: center;
+  justify-content: center;
+  margin-top: 1%;
+}
+
+.modules li:hover {
+  background-color: black;
+  color: white;
+}
+.modules li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+
+.modules li a:hover {
+  color: white;
+}
+
+.modules li {
+  text-align: center;
+  font-family: "Inria Sans", sans-serif;
+  font-size: 1.9rem;
+  color: black;
+  background-color: white;
+  border: solid black;
+  border-radius: 15px;
+  list-style: none;
+  width: 60%;
+  margin-left: 19%;
+  margin-top: 0.5%;
+}
+
+.showup {
+  display: block;
+}
+
+.subjects button:hover {
+  background-color: rgb(242, 242, 242);
+}
+
+@media (max-width: 750px) {
+  .subj_btn2 {
+    font-size: 1.7rem;
+  }
+
+  .modules {
+    margin-top: 2%;
+  }
+
+  .modules li {
+    margin-left: 15%;
+    margin-top: 1%;
+    font-size: 1.6rem;
+  }
+  .head {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 450px) {
+  .subj_btn2 {
+    font-size: 1.4rem;
+  }
+
+  .modules li {
+    font-size: 1.4rem;
+    margin-top: 2%;
+    font-size: 1.4rem;
+  }
+  .modules {
+    margin-top: 3%;
+  }
+  .head {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 350px) {
+  .modules {
+    margin-top: 4%;
+  }
+
+  .modules li {
+    margin-left: 13%;
+    font-size: 1rem;
+  }
+}
